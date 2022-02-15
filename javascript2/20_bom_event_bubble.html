@@ -1,0 +1,26 @@
+<!-- 20_bom_event_bubble.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<title></title>
+<script></script>
+</head>
+<body>
+    <div onclick="alert('div content !!!');">
+        <a href="19_bom_click_event.html" onclick="imageClick(event)">
+            <img src="img/apple.png"/>
+        </a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa optio impedit fuga unde veritatis cupiditate suscipit. Earum assumenda consequuntur aliquid? Aperiam aliquid porro corrupti eveniet hic rem, dignissimos alias consequuntur.</p>
+    </div>
+    <script>
+        function imageClick(event){
+            // event == clickEvent
+            event.stopPropagation();
+            event.preventDefault();
+            alert("imageClick() event 발생!!!");
+            document.querySelector("img").width="500";
+        }
+    </script>
+</body>
+</html>

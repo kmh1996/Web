@@ -1,0 +1,20 @@
+<!-- 24_event_stop.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<title></title>
+<script>
+    function hideMenu(){
+        alert('컨텍스트 메뉴를 사용할 수 없습니다.');
+        return false;
+    }
+
+    document.oncontextmenu = hideMenu;
+</script>
+</head>
+<body>
+    <img src="img/pome.png" width="500"/>
+    <a href="19_bom_click_event.html" onclick="alert('a tag click');return false;">aaa</a>
+</body>
+</html>

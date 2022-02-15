@@ -1,0 +1,32 @@
+<!-- 01_async_defer_external.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<title></title>
+<!-- <script src="00_external.js"></script> -->
+<!-- 
+    [parsing HTML][    blocked               ][parsing HTML]
+                  [fetching js][execution js]
+ -->
+ <!-- <script async src="00_external.js"></script> -->
+ <!-- 
+        [ parsing HTML][   blocked ][parsing HTML] 
+          [fetching js][execting js]            
+  -->
+  <script defer src="00_external.js"></script>
+  <!-- 
+        [  parsing HTML ] page is ready [executing js] 
+            [fetching js]
+   -->
+</head>
+<body>
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et cupiditate est sunt expedita provident nesciunt, amet, possimus placeat temporibus eum porro. Eligendi sapiente non adipisci tempora laborum quam quia sint!</div>
+    <!-- <script src="00_external.js"></script> -->
+    <!-- 
+        사용자가 기본적인 HTML content를 빨리 볼수 있다.
+        ^ 
+        [parsing HTML][fetching js][execution js]
+     -->
+</body>
+</html>
