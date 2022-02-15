@@ -1,0 +1,106 @@
+<!-- 20210917_3.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<title></title>
+<style>
+    body{
+        color:white;
+    }
+
+    div#wrapper{
+        width:900px;
+        min-height:300px;
+        margin:0 auto;
+    }
+
+    header, footer, nav, aside, section{
+        border:1px solid #999;
+        padding:10px;
+        margin:5px;
+    }
+
+    header{
+        background-color:skyblue;
+    }
+
+    nav, aside {
+        width:100px;
+        background-color: pink;
+    }
+
+    nav, section , aside{
+        float:left;
+        height:500px;
+    }
+
+    footer{
+        background-color:skyblue;
+        clear:both;
+    }
+
+    section{
+        width:604px;
+        background-color:lightgreen;
+    }
+
+    article{
+        width:90%;
+        background-color: gray;
+        margin-left:20px;
+    }
+
+    nav ul{
+        list-style:none;
+        padding:0;
+    }
+
+    nav ul li{
+        text-align:center;
+        color:black;
+    }
+
+    nav ul li:hover{
+        color:white;
+    }
+
+</style>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- header>p{header} -->
+        <header>
+            <p>header</p>
+        </header>
+        <main>
+            <nav>
+                <p>nav</p>
+                <!-- ul>li{menu-$}*3 -->
+                <ul>
+                    <li>menu-1</li>
+                    <li>menu-2</li>
+                    <li>menu-3</li>
+                </ul>
+            </nav>
+            <!-- section>p{section}+article>p 
+            -->
+            <section>
+                <p>section</p>
+                <article>
+                    <p>article</p>
+                    <!-- lorem100 -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nam nisi fugiat natus possimus iste molestiae, dolorum asperiores nobis, recusandae odio harum fugit est voluptatibus? Maxime aperiam deleniti dolorem et porro, nobis dignissimos non sequi ab. Ea eos laboriosam architecto eligendi quam facilis necessitatibus vel ratione harum quasi a, officiis commodi beatae! Similique placeat dolor quae quisquam inventore, laudantium itaque vitae odio nesciunt tempore ipsam voluptatibus, alias maxime distinctio animi amet eius maiores! Nihil, ipsam porro molestiae saepe dolor aperiam dignissimos aut in? Autem placeat voluptas, asperiores officia soluta molestiae? Perspiciatis aspernatur accusantium deleniti quis illum, vel ab quidem quia!</p>
+                </article>
+            </section>
+            <!-- aside>p{aside} -->
+            <aside>
+                <p>aside</p>
+            </aside>
+            <footer>
+                <p>footer</p>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
